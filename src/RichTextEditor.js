@@ -305,6 +305,7 @@ export default class RichTextEditor extends Component {
           // injectedJavaScript={injectScript}
           source={pageSource}
           onLoad={() => this.init()}
+          allowFileAccess={true}
         />
         {this._renderLinkModal()}
       </View>
