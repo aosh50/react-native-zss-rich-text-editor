@@ -304,7 +304,8 @@ export default class RichTextEditor extends Component {
           onMessage={(message) => this.onMessage(message)}
           // injectedJavaScript={injectScript}
           source={pageSource}
-          onLoad={() => this.init()}
+          onLoad={() => this.init()}   
+          originWhitelist={['*']}
         />
         {this._renderLinkModal()}
       </View>
