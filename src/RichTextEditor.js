@@ -306,6 +306,7 @@ export default class RichTextEditor extends Component {
           source={pageSource}
           onLoad={() => this.init()}
           allowFileAccess={true}
+          originWhitelist={['*']}
         />
         {this._renderLinkModal()}
       </View>
